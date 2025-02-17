@@ -15,15 +15,14 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://mlinteriors.vercel.app'),
+    metadataBase: new URL('https://mlinteriors.in/'),
     title: {
         default: 'ML Interiors | Luxury Interior Design Services in Bengaluru',
         template: '%s | ML Interiors'
     },
-    description:
-        'Premium interior design services in Bengaluru. Specializing in residential, commercial, and modular kitchen designs.',
+    description: 'Premium interior design services in Bengaluru. Specializing in residential, commercial, and modular kitchen designs.',
     applicationName: 'ML Interiors',
-    authors: [{ name: 'ML Interiors', url: 'https://mlinteriors.vercel.app' }],
+    authors: [{ name: 'ML Interiors', url: 'https://mlinteriors.in/' }],
     generator: 'Next.js',
     keywords: [
         // Location-specific keywords
@@ -82,25 +81,25 @@ export const metadata: Metadata = {
         }
     },
     alternates: {
-        canonical: 'https://mlinteriors.vercel.app'
+        canonical: 'https://mlinteriors.in/'
     },
     openGraph: {
         title: 'ML Interiors - Luxury Interior Design Services in Bengaluru',
         description:
             'Transform your space with ML Interiors. Specialized in luxury residential, commercial, and modular kitchen designs. Get expert interior design services in Bengaluru.',
-        url: 'https://mlinteriors.vercel.app',
+        url: 'https://mlinteriors.in/',
         siteName: 'ML Interiors',
         locale: 'en_IN',
         type: 'website',
         images: [
             {
-                url: 'https://mlinteriors.vercel.app/og-image.png',
+                url: 'https://mlinteriors.in/og-image.png',
                 width: 1200,
                 height: 630,
                 alt: 'ML Interiors - Luxury Interior Design Services'
             },
             {
-                url: 'https://mlinteriors.vercel.app/og-image-square.png',
+                url: 'https://mlinteriors.in/og-image-square.png',
                 width: 600,
                 height: 600,
                 alt: 'ML Interiors Logo and Showcase'
@@ -114,7 +113,7 @@ export const metadata: Metadata = {
     //     title: 'ML Interiors - Luxury Interior Design Services',
     //     description: 'Transform your space with ML Interiors. Expert interior design services in Bengaluru.',
     //     images: {
-    //         url: 'https://mlinteriors.vercel.app/twitter-image.png',
+    //         url: 'https://mlinteriors.in//twitter-image.png',
     //         alt: 'ML Interiors - Luxury Interior Design Portfolio'
     //     }
     // },

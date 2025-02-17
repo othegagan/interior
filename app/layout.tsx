@@ -119,13 +119,6 @@ export const metadata: Metadata = {
     // },
     category: 'Interior Design',
     classification: 'Interior Design Services',
-    other: {
-        'msapplication-TileColor': '#1C2528',
-        'theme-color': '#1C2528',
-        'apple-mobile-web-app-capable': 'yes',
-        'apple-mobile-web-app-status-bar-style': 'black-translucent',
-        'format-detection': 'telephone=no'
-    }
 };
 
 export default function RootLayout({
@@ -135,52 +128,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en' suppressHydrationWarning className='scroll-smooth' style={{ scrollBehavior: 'smooth' }}>
-            <head>
-                <script
-                    type='application/ld+json'
-                    // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            '@context': 'https://schema.org',
-                            '@type': 'LocalBusiness',
-                            name: 'ML Interiors',
-                            image: 'https://mlinteriors.vercel.app/og-image.png',
-                            '@id': 'https://mlinteriors.vercel.app',
-                            url: 'https://mlinteriors.vercel.app',
-                            telephone: '+919036949408',
-                            address: {
-                                '@type': 'PostalAddress',
-                                streetAddress: 'No.22, 3rd cross Kaveri Layout, Doddabettahalli Layout',
-                                addressLocality: 'Vidyaranyapura',
-                                addressRegion: 'Bengaluru',
-                                postalCode: '560097',
-                                addressCountry: 'IN'
-                            },
-                            geo: {
-                                '@type': 'GeoCoordinates',
-                                latitude: 13.0827, // Replace with actual coordinates
-                                longitude: 77.5574 // Replace with actual coordinates
-                            },
-                            openingHoursSpecification: {
-                                '@type': 'OpeningHoursSpecification',
-                                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-                                opens: '09:00',
-                                closes: '18:00'
-                            },
-                            // sameAs: [
-                            //     'https://facebook.com/mlinteriors',
-                            //     'https://twitter.com/mlinteriors',
-                            //     'https://instagram.com/mlinteriors'
-                            // ],
-                            priceRange: '₹₹₹',
-                            servesCuisine: 'Interior Design Services',
-                            areaServed: ['Bengaluru', 'Karnataka'],
-                            description:
-                                'Premium interior design services in Bengaluru. Specializing in residential, commercial, and modular kitchen designs with a focus on luxury, sustainability, and modern aesthetics.'
-                        })
-                    }}
-                />
-            </head>
             <body
                 className={cn(
                     ' h-dvh w-full min-w-[360px] overflow-x-hidden bg-background font-sans antialiased',

@@ -3,11 +3,6 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const metadata = {
-    title: 'Terms & Conditions',
-    description: 'Read the terms and conditions for ML Interiors, including scope of services, payment terms, client responsibilities, and more.'
-};
-
 export default function Terms() {
     return (
         <div>

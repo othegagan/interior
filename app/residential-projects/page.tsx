@@ -5,11 +5,6 @@ import Navbar from '@/components/Navbar';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
-export const metadata = {
-    title: 'Residential Projects',
-    description: 'A showcase of residential projects including cafes and salons.'
-};
-
 export default function Page() {
     return (
         <div className=' mt-14 '>

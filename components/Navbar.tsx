@@ -76,7 +76,11 @@ export default function Navbar({ variant = 'light' }: NavbarProps) {
                         />
                     </Link>
 
-                    <button type='button' onClick={() => setIsOpen(!isOpen)} className='z-50 flex flex-col gap-1.5 p-2'>
+                    <button
+                        aria-label='Navigation Menu'
+                        type='button'
+                        onClick={() => setIsOpen(!isOpen)}
+                        className='z-50 flex flex-col gap-1.5 p-2'>
                         <span
                             className={cn(
                                 'block h-0.5 w-6 transition-all duration-300',

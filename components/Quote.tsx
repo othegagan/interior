@@ -1,12 +1,17 @@
-import Image from 'next/image';
 import { InView } from './ui/in-view';
 
 const quote = 'The essence of interior design will always be about people and how they live.';
 
 export default function Quote() {
     return (
-        <section className='relative py-32'>
-            <div className='container z-10 text-white'>
+        <section className='relative '>
+            <img
+                src='/others/dark-moody.webp'
+                alt=''
+                className='-z-10 absolute h-full w-full object-cover object-center brightness-50'
+                title='dark moody'
+            />
+            <div className='container z-10 py-32 text-white'>
                 <div className='flex flex-col items-center text-center'>
                     <InView
                         variants={{
@@ -18,15 +23,6 @@ export default function Quote() {
                     </InView>
                 </div>
             </div>
-
-            <Image
-                src='/others/dark-moody.webp'
-                alt='image'
-                fill
-                className='-z-10 absolute object-cover object-center brightness-50'
-                priority
-                title='dark moody'
-            />
         </section>
     );
 }

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { InView } from './ui/in-view';
 import SubTitle from './ui/sub-title';
 
@@ -54,7 +53,7 @@ export default function HowWeWork() {
                     {reasons.map((reason, i) => (
                         <div key={i} className='group flex flex-col'>
                             <div className='mb-5 flex size-16 items-center justify-center rounded-full group-hover:scale-110'>
-                                <Image src={reason.icon} alt='icon' width={64} height={64} title='icon' />
+                                <img src={reason.icon} alt='icon' width={64} height={64} />
                             </div>
                             <h3 className='mb-2 font-semibold text-xl'>{reason.title}</h3>
                             <p className='text-white/70'>{reason.description}</p>

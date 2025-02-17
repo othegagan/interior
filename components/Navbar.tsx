@@ -2,7 +2,6 @@
 
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
@@ -35,13 +34,12 @@ export default function Navbar({ variant = 'light' }: NavbarProps) {
                 {/* Desktop Navigiation */}
                 <div className='hidden h-20 items-center justify-between border-muted-foreground/50 border-b md:flex'>
                     <Link href='/' className='flex items-center gap-2'>
-                        <Image
+                        <img
                             src={variant === 'light' ? '/logo-full-light.svg' : '/logo-full-dark.svg'}
                             alt='logo'
                             width={200}
                             height={120}
                             className='size-auto'
-                            priority
                         />
                     </Link>
                     <nav className=' items-center gap-10 md:flex'>
@@ -66,13 +64,12 @@ export default function Navbar({ variant = 'light' }: NavbarProps) {
                 {/* Mobile Navigation */}
                 <nav className='flex h-20 w-full items-center justify-between border-muted-foreground/50 border-b p-4 md:hidden'>
                     <Link href='/'>
-                        <Image
+                        <img
                             src={variant === 'light' ? '/logo-full-light.svg' : '/logo-full-dark.svg'}
                             alt='logo'
                             width={200}
                             height={120}
                             className='size-auto'
-                            priority
                             title='logo'
                         />
                     </Link>
@@ -109,13 +106,12 @@ export default function Navbar({ variant = 'light' }: NavbarProps) {
                     <div
                         className={`fixed inset-0 transform bg-primary/50 backdrop-blur-[8px] transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                         <div className='flex h-full flex-col items-center justify-center gap-8'>
-                            <Image
+                            <img
                                 src={variant === 'light' ? '/logo-full-light.svg' : '/logo-full-dark.svg'}
                                 alt='logo'
                                 width={200}
                                 height={120}
                                 className='size-auto'
-                                priority
                                 title='logo'
                             />
                             {navLinks.map((link) => (

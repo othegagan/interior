@@ -1,7 +1,6 @@
 import SubTitle from '@/components/ui/sub-title';
 import { TextEffect } from '@/components/ui/text-effect';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from './Navbar';
 
@@ -9,7 +8,11 @@ export default function Hero() {
     return (
         <section className=' relative min-h-[100dvh]'>
             <Navbar variant='light' />
-            <Image src='/hero-bg.jpg' alt='Interior workspace with desk and chair' fill className='object-cover brightness-90' priority title='hero-bg' />
+            <img
+                src='/hero-bg.jpg'
+                alt='Interior workspace with desk and chair'
+                className='absolute h-full w-full object-cover brightness-90'
+            />
             <div className='container relative mx-auto px-6 pt-32'>
                 <div className='flex w-fit max-w-5xl flex-col justify-start gap-10'>
                     <SubTitle text='Inspired interiors' variant='white' style={{ animationDelay: '0.2s' }} />

@@ -1,6 +1,5 @@
 import Navbar from '@/components/Navbar';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Terms() {
@@ -84,7 +83,7 @@ export default function Terms() {
                             <h4 className='font-semibold'>For any inquiries, please reach out to:</h4>
 
                             <Link href='/' className='inline-flex'>
-                                <Image src='/logo-full-light.svg' alt='logo' width={200} height={120} className='size-auto' priority />
+                                <img src='/logo-full-light.svg' alt='logo' width={200} height={120} className='size-auto' />
                             </Link>
 
                             <div className='space-y-5'>

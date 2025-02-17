@@ -1,5 +1,4 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
@@ -18,7 +17,7 @@ export default function Footer() {
                     {/* Logo and Social Links */}
                     <div className='space-y-6'>
                         <Link href='/' className='inline-flex'>
-                            <Image src='/logo-full-light.svg' alt='logo' width={200} height={120} className='size-auto' priority title='logo' />
+                            <img src='/logo-full-light.svg' alt='logo' width={200} height={120} className='size-auto' title='logo' />
                         </Link>
                         <div className='flex gap-4'>
                             <Link

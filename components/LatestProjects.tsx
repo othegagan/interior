@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { InView } from './ui/in-view';
 import SubTitle from './ui/sub-title';
@@ -50,10 +49,9 @@ export default function LatestProjects() {
                             href={project.link}
                             key={project.name}
                             className='group relative isolate flex h-[350px] flex-col justify-end overflow-hidden px-8 pt-40 pb-8'>
-                            <Image
+                            <img
                                 src={project.imageUrl}
                                 alt={project.name}
-                                title={project.name}
                                 width={400}
                                 height={400}
                                 className='absolute inset-0 h-full w-full object-cover transition-all ease-linear group-hover:scale-105'

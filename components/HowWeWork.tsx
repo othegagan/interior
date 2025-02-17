@@ -37,9 +37,9 @@ export default function HowWeWork() {
                             visible: { opacity: 1, y: 0, filter: 'blur(0px)' }
                         }}
                         transition={{ duration: 0.3, ease: 'linear' }}>
-                        <h1 className='section-title'>
+                        <h2 className='section-title'>
                             From concept to completion in <span className='text-primary'>our work</span>
-                        </h1>
+                        </h2>
                     </InView>
 
                     <div className='flex items-start justify-end'>

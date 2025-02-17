@@ -57,9 +57,9 @@ export default function About() {
                             visible: { opacity: 1, y: 0, filter: 'blur(0px)' }
                         }}
                         transition={{ duration: 0.3, ease: 'linear' }}>
-                        <h1 className='section-title'>
+                        <h2 className='section-title'>
                             Our passion for design, <span className='text-primary'>your vision realized</span>
-                        </h1>
+                        </h2>
                     </InView>
 
                     <p className='leading-relaxed'>

@@ -27,9 +27,9 @@ export default function OurServices() {
                             visible: { opacity: 1, y: 0, filter: 'blur(0px)' }
                         }}
                         transition={{ duration: 0.3, ease: 'linear' }}>
-                        <h1 className='section-title'>
+                        <h2 className='section-title'>
                             Innovative design services for <span className='text-primary'>every need</span>
-                        </h1>
+                        </h2>
                     </InView>
 
                     <div className='flex items-start justify-end'>

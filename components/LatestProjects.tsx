@@ -31,9 +31,9 @@ export default function LatestProjects() {
                             visible: { opacity: 1, y: 0, filter: 'blur(0px)' }
                         }}
                         transition={{ duration: 0.3, ease: 'linear' }}>
-                        <h1 className='section-title'>
+                        <h2 className='section-title'>
                             Creative projects that define <span className='text-primary'>our style</span>
-                        </h1>
+                        </h2>
                     </InView>
 
                     <div className='flex items-start justify-end'>

@@ -33,9 +33,9 @@ export default function WhyChooseUs() {
                             visible: { opacity: 1, y: 0, filter: 'blur(0px)' }
                         }}
                         transition={{ duration: 0.3, ease: 'linear' }}>
-                        <h1 className='section-title'>
+                        <h2 className='section-title'>
                             A behind the scenes look at <span className='text-primary'>our agency</span>
-                        </h1>
+                        </h2>
                     </InView>
 
                     <p className='text-muted-foreground'>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         template: '%s | ML Interiors'
     },
     description:
-        'Premium interior design services in Bengaluru. Specializing in residential, commercial, and modular kitchen designs with a focus on luxury, sustainability, and modern aesthetics.',
+        'Premium interior design services in Bengaluru. Specializing in residential, commercial, and modular kitchen designs.',
     applicationName: 'ML Interiors',
     authors: [{ name: 'ML Interiors', url: 'https://mlinteriors.vercel.app' }],
     generator: 'Next.js',

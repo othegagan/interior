@@ -10,7 +10,8 @@ const geistMono = Geist_Mono({
 });
 
 const hankenGrotesk = Hanken_Grotesk({
-    variable: '--font-hanken'
+    variable: '--font-hanken',
+    subsets: ['latin']
 });
 
 export const metadata: Metadata = {
@@ -118,7 +119,7 @@ export const metadata: Metadata = {
     //     }
     // },
     category: 'Interior Design',
-    classification: 'Interior Design Services',
+    classification: 'Interior Design Services'
 };
 
 export default function RootLayout({

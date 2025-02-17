@@ -25,6 +25,7 @@ export default function Quote() {
                 fill
                 className='-z-10 absolute object-cover object-center brightness-50'
                 priority
+                title='dark moody'
             />
         </section>
     );

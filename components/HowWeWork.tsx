@@ -54,7 +54,7 @@ export default function HowWeWork() {
                     {reasons.map((reason, i) => (
                         <div key={i} className='group flex flex-col'>
                             <div className='mb-5 flex size-16 items-center justify-center rounded-full group-hover:scale-110'>
-                                <Image src={reason.icon} alt='icon' width={64} height={64} />
+                                <Image src={reason.icon} alt='icon' width={64} height={64} title='icon' />
                             </div>
                             <h3 className='mb-2 font-semibold text-xl'>{reason.title}</h3>
                             <p className='text-white/70'>{reason.description}</p>

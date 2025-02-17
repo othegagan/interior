@@ -73,6 +73,7 @@ export default function Navbar({ variant = 'light' }: NavbarProps) {
                             height={120}
                             className='size-auto'
                             priority
+                            title='logo'
                         />
                     </Link>
 
@@ -115,6 +116,7 @@ export default function Navbar({ variant = 'light' }: NavbarProps) {
                                 height={120}
                                 className='size-auto'
                                 priority
+                                title='logo'
                             />
                             {navLinks.map((link) => (
                                 <Link

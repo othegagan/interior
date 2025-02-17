@@ -17,7 +17,8 @@ export default function About() {
                         <img
                             src='others/about-img-1.jpg'
                             className='aspect-[1/0.7] w-full object-cover'
-                            alt='auth'
+                            alt='about-img-1'
+                            title='about-img-1'
                             style={{ transform: 'translate(0px, 0px)' }}
                         />
                     </div>
@@ -26,7 +27,8 @@ export default function About() {
                             <img
                                 src='others/about-img-2.jpg'
                                 className='aspect-auto w-full object-cover'
-                                alt='auth'
+                                alt='about-img-2'
+                                title='about-img-2'
                                 style={{ transform: 'translate(0px, 0px)' }}
                             />
                         </div>

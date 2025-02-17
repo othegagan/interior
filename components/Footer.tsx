@@ -18,7 +18,7 @@ export default function Footer() {
                     {/* Logo and Social Links */}
                     <div className='space-y-6'>
                         <Link href='/' className='inline-flex'>
-                            <Image src='/logo-full-light.svg' alt='logo' width={200} height={120} className='size-auto' priority />
+                            <Image src='/logo-full-light.svg' alt='logo' width={200} height={120} className='size-auto' priority title='logo' />
                         </Link>
                         <div className='flex gap-4'>
                             <Link

@@ -48,6 +48,7 @@ export default function OurServices() {
                             <Image
                                 src={service.imageUrl}
                                 alt={service.name}
+                                title={service.name}
                                 width={400}
                                 height={400}
                                 className='absolute inset-0 h-full w-full object-cover transition-all ease-linear group-hover:scale-105'

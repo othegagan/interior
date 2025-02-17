@@ -53,6 +53,7 @@ export default function LatestProjects() {
                             <Image
                                 src={project.imageUrl}
                                 alt={project.name}
+                                title={project.name}
                                 width={400}
                                 height={400}
                                 className='absolute inset-0 h-full w-full object-cover transition-all ease-linear group-hover:scale-105'

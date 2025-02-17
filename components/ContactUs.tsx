@@ -1,6 +1,5 @@
 'use client';
 
-import { submitContactForm } from '@/server/action';
 import { useState } from 'react';
 import { Button } from './ui/button';
 import { InView } from './ui/in-view';
@@ -76,12 +75,23 @@ export default function ContactUs() {
             // Set loading state to true when the form submission starts
             setLoading(true);
 
-            const response = await submitContactForm(data);
+            const url =
+                'https://script.google.com/macros/s/AKfycbzl-5wIYTOCBs8We03oZdvLrE6bSey2FnJOLLaylhuXDDEucIhPiPtMYRJgHF00RJl97Q/exec';
 
-            if (response) {
-                form.reset(); // Reset form fields
-                alert('Thank you for your message. We will get back to you soon!');
-            }
+            // Send form data to the Google Apps Script Web App
+            fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(data)
+            })
+                .then((response) => response.text())
+                .then((data) => {
+                    form.reset(); // Reset form fields
+                    alert('Thank you for your message. We will get back to you soon!');
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('There was an error submitting the form. Please try again.');
+                });
         } catch (error) {
             console.error(error);
             alert('There was an error submitting the form. Please try again.');

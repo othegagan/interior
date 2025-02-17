@@ -12,7 +12,8 @@ const nextConfig: NextConfig = {
                 hostname: '**.vercel-storage.com'
             }
         ]
-    }
+    },
+    output: 'export'
 };
 
 export default nextConfig;

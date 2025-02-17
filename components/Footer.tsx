@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const infoLinks = [
     { title: 'About Our Company', href: '/#about-us' },
@@ -19,20 +20,23 @@ export default function Footer() {
                         <Link href='/' className='inline-flex'>
                             <Image src='/logo-full-light.svg' alt='logo' width={200} height={120} className='size-auto' priority />
                         </Link>
-                        {/* <div className='flex gap-4'>
-                            <Link href='#' className='rounded-full bg-white p-2 transition-opacity hover:opacity-80'>
-                                <Facebook className='h-5 w-5 text-[#1C2528]' />
-                                <span className='sr-only'>Facebook</span>
+                        <div className='flex gap-4'>
+                            <Link
+                                href='https://wa.me/message/QJXJ3T5MJPDTA1'
+                                rel='noopener noreferrer'
+                                className='rounded-full bg-white p-2 transition-opacity hover:opacity-80'>
+                                <FaWhatsapp className='h-5 w-5 text-[#1C2528]' />
+                                <span className='sr-only'>Whatsapp</span>
                             </Link>
-                            <Link href='#' className='rounded-full bg-white p-2 transition-opacity hover:opacity-80'>
-                                <Twitter className='h-5 w-5 text-[#1C2528]' />
-                                <span className='sr-only'>Twitter</span>
-                            </Link>
-                            <Link href='#' className='rounded-full bg-white p-2 transition-opacity hover:opacity-80'>
-                                <Instagram className='h-5 w-5 text-[#1C2528]' />
+                            <Link
+                                href='https://www.instagram.com/m.l_interiors'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='rounded-full bg-white p-2 transition-opacity hover:opacity-80'>
+                                <FaInstagram className='h-5 w-5 text-[#1C2528]' />
                                 <span className='sr-only'>Instagram</span>
                             </Link>
-                        </div> */}
+                        </div>
                     </div>
 
                     {/* Information Links */}
@@ -40,7 +44,11 @@ export default function Footer() {
                         <h3 className='font-semibold text-xl'>Information</h3>
                         <nav className='flex flex-col gap-4'>
                             {infoLinks.map((link) => (
-                                <Link key={link.title} href={link.href} className='w-fit transition-colors hover:text-gray-300'>
+                                <Link
+                                    key={link.title}
+                                    href={link.href}
+                                    rel='noopener noreferrer'
+                                    className='w-fit transition-colors hover:text-gray-300'>
                                     {link.title}
                                 </Link>
                             ))}

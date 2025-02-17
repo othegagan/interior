@@ -62,7 +62,7 @@ export default function Terms() {
                         We ensure high-quality execution, but any warranties on materials, furniture, or third-party work will be covered
                         under the manufacturer’s or vendor’s policies.
                     </li>
-                    <li>Any defects in our work will be addressed within [Number] months after project completion.</li>
+                    <li>Any defects in our work will be addressed within 6 months after project completion.</li>
                 </ol>
 
                 <h2 className=' mt-5 mb-2 font-bold text-xl'>7. Dispute Resolution &amp; Legal Protection</h2>

@@ -15,12 +15,12 @@ export default function Page() {
                     <div className='gallery mt-4'>
                         {Array.from({ length: 6 }, (_, index) => index + 1).map((item) => (
                             <PhotoView key={item} src={`/other-projects/cafe-${item}.jpg`}>
-                                <img src={`/other-projects/cafe-${item}.jpg`} alt='' className='gallery-item' />
+                                <img src={`/other-projects/cafe-${item}.jpg`} alt={`cafe-${item}.jpg`} className='gallery-item' />
                             </PhotoView>
                         ))}
                         {Array.from({ length: 6 }, (_, index) => index + 1).map((item) => (
                             <PhotoView key={item} src={`/other-projects/sallon-${item}.jpg`}>
-                                <img src={`/other-projects/sallon-${item}.jpg`} alt='' className='gallery-item' />
+                                <img src={`/other-projects/sallon-${item}.jpg`} alt={`sallon-${item}.jpg`} className='gallery-item' />
                             </PhotoView>
                         ))}
                     </div>

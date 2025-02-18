@@ -8,13 +8,13 @@ const projects = [
         name: 'Commercial Spaces ',
         imageUrl: '/others/project-1.jpg',
         desc: 'Urban Enterprise: Contemporary design for modern businesses',
-        link: '/commercial-projects'
+        link: '/latest-commercial-projects.html'
     },
     {
         name: 'Residential Spaces ',
         imageUrl: '/others/project-2.jpg',
         desc: 'Urban retreat: modern design meets comfort',
-        link: '/residential-projects'
+        link: '/latest-residential-projects.html'
     }
 ];
 
@@ -67,7 +67,11 @@ export default function LatestProjects() {
                 </div>
 
                 <div className='mx-auto mt-6 flex w-full justify-center md:mt-10'>
-                    <Link scroll={false} style={{ animationDelay: '0.7s' }} className='btn-primary group' href='/other-projects'>
+                    <Link
+                        href='/latest-other-projects.html'
+                        scroll={false}
+                        style={{ animationDelay: '0.7s' }}
+                        className='btn-primary group'>
                         See other projects
                         <ArrowRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
                     </Link>

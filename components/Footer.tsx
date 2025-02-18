@@ -6,7 +6,7 @@ const infoLinks = [
     { title: 'About Our Company', href: '/#about-us' },
     { title: 'View Our Services', href: '/#our-services' },
     { title: 'Projects', href: '/#projects' },
-    { title: 'Terms & Conditions', href: '/terms' }
+    { title: 'Terms & Conditions', href: '/terms.html' }
 ];
 
 export default function Footer() {

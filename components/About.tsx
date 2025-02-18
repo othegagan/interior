@@ -109,7 +109,7 @@ export default function About() {
                                 </div>
                                 <div>
                                     <div className='font-semibold'>Nazir Ahmed</div>
-                                    <div className='text-muted-foreground text-sm'>Co Founder</div>
+                                    <div className='text-muted-foreground text-sm'>Founder</div>
                                 </div>
                             </div>
                         </div>

@@ -15,7 +15,7 @@ export default function Page() {
                     <div className='gallery mt-4'>
                         {Array.from({ length: 11 }, (_, index) => index + 1).map((item) => (
                             <PhotoView key={item} src={`/commercial/co-${item}.jpg`}>
-                                <img src={`/commercial/co-${item}.jpg`} alt='' className='gallery-item' />
+                                <img src={`/commercial/co-${item}.jpg`} alt={`co-${item}.jpg`} className='gallery-item' />
                             </PhotoView>
                         ))}
                     </div>

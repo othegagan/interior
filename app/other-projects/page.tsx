@@ -13,7 +13,7 @@ export default function Page() {
                 <h1 className='font-display font-extrabold text-4xl text-primary'>Other Projects</h1>
                 <PhotoProvider maskOpacity={0.8} bannerVisible={true}>
                     <div className='gallery mt-4'>
-                        {Array.from({ length: 6 }, (_, index) => index + 1).map((item) => (
+                        {Array.from({ length: 5 }, (_, index) => index + 1).map((item) => (
                             <PhotoView key={item} src={`/other-projects/cafe-${item}.jpg`}>
                                 <img src={`/other-projects/cafe-${item}.jpg`} alt={`cafe-${item}.jpg`} className='gallery-item' />
                             </PhotoView>

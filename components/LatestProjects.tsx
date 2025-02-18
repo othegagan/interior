@@ -46,6 +46,7 @@ export default function LatestProjects() {
                 <div className='mt-6 grid w-full grid-cols-1 gap-6 md:mt-10 md:grid-cols-2 md:gap-10'>
                     {projects.map((project) => (
                         <Link
+                            scroll={false}
                             href={project.link}
                             key={project.name}
                             className='group relative isolate flex h-[350px] flex-col justify-end overflow-hidden px-8 pt-40 pb-8'>
@@ -66,7 +67,7 @@ export default function LatestProjects() {
                 </div>
 
                 <div className='mx-auto mt-6 flex w-full justify-center md:mt-10'>
-                    <Link style={{ animationDelay: '0.7s' }} className='btn-primary group' href='/other-projects'>
+                    <Link scroll={false} style={{ animationDelay: '0.7s' }} className='btn-primary group' href='/other-projects'>
                         See other projects
                         <ArrowRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
                     </Link>

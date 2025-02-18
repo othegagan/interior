@@ -108,7 +108,7 @@ export default function About() {
                                     <User />
                                 </div>
                                 <div>
-                                    <div className='font-semibold'>Leslie Alexander</div>
+                                    <div className='font-semibold'>Nazir Ahmed</div>
                                     <div className='text-muted-foreground text-sm'>Co Founder</div>
                                 </div>
                             </div>
